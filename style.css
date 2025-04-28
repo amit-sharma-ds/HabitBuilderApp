@@ -1,0 +1,31 @@
+/* Apply a lighter gradient to the entire body */
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Lighter gradient effect */
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh; /* Ensure the body height covers the entire screen */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Specifically target the main Streamlit container */
+.stApp {
+    background: transparent !important; /* Ensure Streamlit's default background is transparent */
+}
+
+/* For the sidebar background */
+.stSidebar .sidebar-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent sidebar */
+}
+
+/* Apply styles to Streamlit buttons */
+.stButton button {
+    background-color: green; /* Button background color */
+    color: white;
+}
+
+.stButton button:hover {
+    background-color: green; /* Button hover color */
+}
+
